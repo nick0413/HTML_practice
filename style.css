@@ -107,6 +107,7 @@ p{
 
     background-repeat: no-repeat ;
     padding: 80px 50px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4)
 
 }
 
@@ -233,21 +234,128 @@ p{
 
 
 #page_header{
-	background-image: url(imagenes/background_forest_4.png);
-	background-size: 100%;
-	width: 100%;
-	height: 40vh ;
+	background-image: url(imagenes/background_forest_6.png);
+	background-repeat: no-repeat ;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+	background-size: cover;
+	height: auto;
+	min-height: max-content;
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	flex-direction: column;
+	
 }
 
 #page_header h2,
 #page_header p{
 	color:rgb(19, 105, 11);
 }
+#page_header p{
+	color:rgb(19, 105, 11);
+	margin-bottom: 100px;
+}
+footer{
+	background-color: #032d0c;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
+footer .Logo {
+	margin-bottom: 30px ; 
+	
+}
+footer img{
+	height: auto;
+	max-width: 200px;
+}
 
+footer .follow{
+	margin-top: 20px;
+	position: relative;
+	left: 600px;
+	bottom:  100px;
 
+}
 
+footer .follow i{
+	color: #659210;
+	font-size: larger;
+	padding-left: 25px;
+} 
+
+footer .follow i:hover{
+	color: #a8aa0e;
+	cursor: pointer;
+}
+
+#paginacion{
+	text-align: center;
+}
+#paginacion a{
+	text-decoration: none;
+	background-color: #096e1f;
+	padding: 15px 20px;
+	border-radius: 4px;
+	color: lightblue;
+	font-weight: 600;
+
+}
+
+#pro_detalles{
+	display: flex;
+	margin-top: 20px;
+}
+#pro_detalles .pro_detalles_texto{
+	width: 50%;
+	padding-top: 10px;
+}
+#pro_detalles .pro_detalles_texto h4{
+	padding: 10px 0 10px 0;
+}
+#pro_detalles .pro_detalles_texto h2{
+	font-size: 46px;
+}
+
+#pro_detalles .pro_detalles_texto select{
+	display: block;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+
+#pro_detalles .pro_detalles_texto input{
+	width: 50px;
+	height: 47px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+#pro_detalles .pro_detalles_texto button {
+	background: #076c1d;
+	color: #a8aa0e;
+	border-radius: 10px;
+	padding: 10px;
+}
+#pro_detalles .pro_detalles_texto span{
+	line-height: 25px;
+}
+
+#pro_detalles .pro_image{
+	width: 40%;
+	margin-right: 50px;
+
+}
+#pro_detalles .pro_image img{
+	border-radius: 15px;
+}
+.image_group{
+	display: flex;
+	justify-content: space-between;
+
+}
+.images_peque{
+	flex-basis: 24% ;
+	cursor: pointer;
+	
+}
