@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/d4178c3600.js"></script>
+</head>
+<body>
+
+    <section id="header">
+        <a href="#">
+            <img src="imagenes/Logo_transparente.png" alt="Logo_mini_tienda" class="logo">
+        </a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+	<section id="pro_detalles" class="section-p1">
+		<div class="pro_image">
+			<img src="imagenes/Limas_1.png" width="100%" id="imagen_principal">
+
+		</div>
+
+		<div class="pro_detalles_texto">
+			<h6>Marca/fabricante</h6>
+			<h4>Limas de vidrio</h4>
+			<h2>Precio</h2>
+			<select >
+				<option>Escoger variante</option>
+				<option>Color1</option>
+				<option>Color2</option>
+				<option>Color3</option>
+			</select>
+			<input type="number" value="1">
+			<button class="normal"> Añadir al carro</button>
+			<h4>Detalles del producto</h4>
+			<span>Su cuerpo está hecho de bambú 100% biodegradable. Sus
+				cerdas, por el contrario, están hechas de nailon. Tristemente
+				este material no es biodegradable, por eso te recomendamos
+				separar las cerdas del cuerpo, al momento de desechar los
+				cepillos, para que así el medio ambiente no lo sienta</span>
+		</div>
+	</section>
+
+	<footer class="section-p1">
+		<div class="colum">
+			<img class="Logo" src="imagenes/Logo_transparente.png" alt="">
+			<h4>Contacto</h4>
+			<p><strong>Ubicacion:</strong>direccion fisica</p>
+			<p><strong>Telefonos:</strong> (+57) 3045263003 / (+57) 3152199181</p>
+			<div class="follow">
+				<h4>Siguenos en redes</h4>
+				<div class="iconos">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+					<i class="fa fa-whatsapp" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		var MainIMG =document.getElementById("imagen_principal");
+		var smallimg=document.getElementsByClassName("small_img");
+
+		smallimg[0].onclick = function(){
+			MainIMG.src = smallimg[0].src;
+		}
+		smallimg[1].onclick = function(){
+			MainIMG.src = smallimg[1].src;
+		}
+		smallimg[2].onclick = function(){
+			MainIMG.src = smallimg[2].src;
+		}
+	
+	</script>	
+    <script src="script.js"></script>
+</body>
+</html>

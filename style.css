@@ -173,7 +173,7 @@ p{
 }
 #product1 .pro-contaier{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	padding-top: 20px ;
 	flex-wrap: wrap;
 }
@@ -292,6 +292,7 @@ footer .follow i:hover{
 
 #paginacion{
 	text-align: center;
+	justify-content: space-evenly;
 }
 #paginacion a{
 	text-decoration: none;
@@ -300,6 +301,7 @@ footer .follow i:hover{
 	border-radius: 4px;
 	color: lightblue;
 	font-weight: 600;
+	margin: 5px;
 
 }
 
@@ -351,7 +353,7 @@ footer .follow i:hover{
 }
 .image_group{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 
 }
 .images_peque{
