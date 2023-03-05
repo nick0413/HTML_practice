@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,63 +23,40 @@
             </ul>
         </div>
     </section>
-    <section id="page_header">
-        
-        <h2> otro SLOGAN</h2>
-        <p>vendemos cositas cheveres</p>
-        
-    </section>
 
-	<section id="product1" class="section-p1">
-		<h2>Nuestros productos</h2>
-		<p>Productos ecologicospara todos</p>
-		<div class="pro-contaier">
-			<div class="pro" onclick="window.location.href='sproduct_razor.html'">
-				<img src="imagenes/panuelo_1.jpg" alt="razuradora re utilizable">
-				<div class="descripcion">
-					<span>Marca/fabricante</span>
-					<h5>Pañuelo reutilizable</h5>
-					<h4>10.000 COP</h4>
+	<section id="pro_detalles" class="section-p1">
+		<div class="pro_image">
+			<img src="imagenes/bolsa_1.jpg" width="100%" id="imagen_principal">
+		
+		
+			<div class="image_group">
+				<div class="images_peque">
+					<img src="imagenes/bolsa_1.jpg" width="100%" class="small_img">
 				</div>
-				<a href="#">
-					<i class="fa fa-shopping-cart cart"></i>
-				</a>
 
 			</div>
-			<div class="pro" onclick="window.location.href='sproduct_bolsa.html'">
-				<img src="imagenes/bolsa_1.jpg" alt="limas de vidrio">
-				<div class="descripcion">
-					<span>Marca/fabricante</span>
-					<h5>Bolsa reutilizable</h5>
-					<h4>5.000 COP</h4>
-				</div>
-				<a href="#">
-					<i class="fa fa-shopping-cart cart"></i>
-				</a>
+		</div>
 
-			</div>
-			<div class="pro" onclick="window.location.href='sproduct_cuaderno.html'">
-				<img src="imagenes/cuaderno_1.jpg" alt="Zepillos de bambu">
-				<div class="descripcion">
-					<span>Marca/fabricante</span>
-					<h5>Cuaderno reciclado</h5>
-					<h4>4.000 COP</h4>
-				</div>
-				<a href="#">
-					<i class="fa fa-shopping-cart cart"></i>
-				</a>
-
-			</div>
-
+		<div class="pro_detalles_texto">
+			<h6>Marca/fabricante</h6>
+			<h4>Nombre producto</h4>
+			<h2>Precio</h2>
+			<select >
+				<option>Escoger variante</option>
+				<option>Color1</option>
+				<option>Color2</option>
+				<option>Color3</option>
+			</select>
+			<input type="number" value="1">
+			<button class="normal"> Añadir al carro</button>
+			<h4>Detalles del producto</h4>
+			<span>Su cuerpo está hecho de bambú 100% biodegradable. Sus
+				cerdas, por el contrario, están hechas de nailon. Tristemente
+				este material no es biodegradable, por eso te recomendamos
+				separar las cerdas del cuerpo, al momento de desechar los
+				cepillos, para que así el medio ambiente no lo sienta</span>
 		</div>
 	</section>
-
-	<section id="paginacion" class="section-p1">
-		<a href="shop.html"> <i class="fa fa-long-arrow-left" aria-hidden="true"></i> </a>		
-		<a href="#">2</a>		
-	</section>
-
-
 
 	<footer class="section-p1">
 		<div class="colum">
@@ -97,6 +74,21 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+		var MainIMG =document.getElementById("imagen_principal");
+		var smallimg=document.getElementsByClassName("small_img");
+
+		smallimg[0].onclick = function(){
+			MainIMG.src = smallimg[0].src;
+		}
+		smallimg[1].onclick = function(){
+			MainIMG.src = smallimg[1].src;
+		}
+		smallimg[2].onclick = function(){
+			MainIMG.src = smallimg[2].src;
+		}
+	
+	</script>	
     <script src="script.js"></script>
 </body>
 </html>
